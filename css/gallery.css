@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    background-color: #D8FFFB;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 10px;
+}
+
+.container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.gallery {
+    flex: 25%;
+    padding: 5px;
+}
+
+.gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border: 2px solid#96e3e7;
+}
+
+.line h1 {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    color: #8E97BE;
+    font-weight: 700;
+    text-align: right;
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.line h2 {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    color: #00C48E;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    text-align: right;
+    font-size: 40px;
+}
+
+.vid {
+    position: relative;
+
+}
+
+.back1 {
+    width: 45%;
+    margin: 30px;
+    border: 3px solid#7DEBFA;
+}
+
+.back2 {
+    width: 45%;
+    float: right;
+    margin: 30px;
+    border: 3px solid#7DEBFA;
+}
+
+.back3 {
+    width: 50%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: 3px solid#7DEBFA;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .gallery {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .gallery {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+img {
+    transition: 1s ease-in-out, 1s ease-in-out;
+}
+
+img:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}

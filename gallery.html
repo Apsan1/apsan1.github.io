@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <script>
+        function switchdark() {
+        var dark = document.body;
+        dark.classList.toggle("dark-mode");
+}
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <i class="fa-solid fa-moon"></i>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+            <li><a href="aboutme.html"><i class="fa-solid fa-person"></i></a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-camera"></a></i></li>
+            <li><a href="places.html"><i class="fa-solid fa-location-pin"></i></a></li>
+            <li> <a href="projects.html"><i class="fa-sharp fa-solid fa-diagram-project"></i></a></li>
+            <li><a href="references.html"><i class="fa-solid fa-book-bookmark"></i></a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br>
+    <hr align="right" width="50%" style="height:5px;border-width:
+     0;background-color:#97BBD8;margin-right: 10px;">
+    <div class="line">
+        <h1>This is an image gallery</h1>
+        <h2>All the photos were clicked by me.</h2>
+
+    </div>
+    <div class="container" id="gal">
+    </div>
+    <div class="vid">
+        <a target="_blank" href="videos/vid2.mp4">
+            <video class="back1" autoplay loop muted>
+                <source src="videos/vid2.mp4" type="video/mp4">
+            </video></a>
+        <a target="_blank" href="videos/vid3.mp4">
+            <video class="back2" autoplay loop muted>
+                <source src="videos/vid3.mp4" type="video/mp4">
+            </video></a>
+    </div>
+    <div class="ful-video">
+        <a target="_blank" href="videos/vid1.mp4">
+            <video class="back3" autoplay loop muted>
+                <source src="videos/vid1.mp4" type="video/mp4">
+            </video></a>
+    </div>
+    <script src="image.js"></script>
+    <script src="https://kit.fontawesome.com/23cbe2ba13.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

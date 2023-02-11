@@ -1,0 +1,28 @@
+*{
+    background-color: #DCECE2;
+	font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+	text-align: justify;
+    margin: 0;
+}
+.ref{
+    padding: 4%;
+    height: 84.4vh;
+    text-align: justify;
+}
+.ref h1{
+    color: #6A878C;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+.ref p{
+    color: #81BB51;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.ref li{
+    color: #516258;
+    font-size: 1.3rem;
+    font-weight: 400;
+}

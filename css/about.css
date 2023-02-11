@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Open+Sans:wght@600&family=Quicksand:wght@600&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: antiquewhite;
+	font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+	text-align: justify;
+}
+section{
+	padding: 4%;
+}
+.about-me{
+	width: 100%;
+	height: 93vh;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 4rem;
+
+}
+.about-me2{
+	width: 100%;
+	height: 93vh;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 4rem;
+	scroll-snap-align: start;
+}
+.image img{
+	max-width: 100%;
+	width: 560px;
+	height: auto;
+}
+.content{
+	padding: 6% 0;
+}
+.content h1{
+	color: #00917C;
+	font-size: 3.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 0.6 rem;
+}
+.content h2{
+	color: #B6A999;
+	font-size: 2.25em;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+}
+p{
+	color: #402E32;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.text1{
+	margin-right: 60px;
+}
+.about-me h3{
+	color: #746758;
+	font-size: 2.25em;
+	font-weight: 600;
+}

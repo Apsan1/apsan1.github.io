@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Montserrat:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background-color: #FEF9F0;
+    list-style: none;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.col-1{
+    float: left;
+    margin: 1rem;
+    text-align: center;
+    line-height: 11vh;
+    font-size: 5vw;
+    height: 10vh;
+    
+}
+.flex-container{
+    display: flex;
+    width: 90vw;
+    height: 70vh;
+    
+}
+
+.fa-facebook {
+    font-size: 3.125rem;
+    color: #0F92F3;
+}
+
+.fa-twitter {
+    font-size: 2.188rem;
+    color: #1DA1F2;
+}
+
+.fa-instagram {
+    font-size: 2.5rem;
+    color: #F2056B;
+}
+
+.fa-spotify {
+    font-size: 2.5rem;
+    color: #1CCC5B;
+}
+
+.fa-linkedin {
+    font-size: 2.5rem;
+    color: #0B5FBB;
+}
+
+.fa-github {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.fa-square-snapchat {
+    font-size: 3.125rem;
+    color: #F2EE01;
+}
+
+.fa-facebook:hover {
+    cursor: pointer;
+    color: rgb(0, 196, 235);
+}
+
+.fa-twitter:hover {
+    cursor: pointer;
+    color: wheat;
+}
+
+.fa-instagram:hover {
+    cursor: pointer;
+    color: #7C0DE5;
+}
+
+.fa-spotify:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.fa-linkedin:hover {
+    cursor: pointer;
+    color: aquamarine;
+}
+
+.fa-github:hover {
+    cursor: pointer;
+    color: rgb(79, 96, 103);
+}
+
+.fa-square-snapchat:hover {
+    cursor: pointer;
+    color: rgb(251, 251, 19);
+}
+
+.fa-brands {
+    transition: 1s ease-in-out, 1s ease-in-out;
+}
+
+.fa-brands:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.fa-user {
+    font-size: 12.5rem;
+    border-radius: 20%;
+}
+.col-2{
+    width: 30vw;
+    padding: 1rem;
+}
+.col-3{
+    width: 30vw;
+    align-content: center;
+}
+.col-4{
+    width: 40vw;
+    padding: 1rem;
+    text-align: center;
+}
+.shape h1 {
+    margin-top: 2.5rem;
+    color: #4E8075;
+    font-size: 1.563rem;
+}
+
+.shape h2 {
+    color: #81B5A9;
+    margin-top: 1.875rem;
+    font-size: 1.313rem;
+    line-height: 1.875rem;
+}
+
+.shape {
+    border-radius: 1.563rem;
+    padding: 2rem;
+    width: 18.75rem;
+    height: 26.25rem;
+    border: 0.188rem solid #4D4637;
+    text-align: center;
+}
+.shape img{
+    height: 50%;
+    width: 67%;
+    border-radius: 50%;
+}
+.topic {
+    color: #BAA987;
+    margin-top: 7.5rem;
+    font-size: 1.063rem;
+    height: 1.875rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.contents {
+    color: #A29E95;
+    font-size: 2.1rem;
+    text-align: left;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contents p {
+    font-weight: 700;
+}
+
+.contents w {
+    color: #698772;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.right-topic {
+    color: #E1B58A;
+    margin-top: 7.5rem;
+    font-size: 1.125rem;
+    text-align: left;
+    margin-bottom: 1.875rem;
+}
+
+.right-text {
+    color: #BAA987;
+    font-size:  0.75rem;
+    text-align: left;
+    padding: 0.313rem;
+    margin-bottom: 9.375rem;
+    line-height: 1.563rem;
+}
+
+.right-text p {
+    margin-top: 0.625rem;
+    color: #698772;
+    font-size: 1.063rem;
+    text-align: justify;
+}
+/* Add a media query for screens smaller than 900px */
+@media screen and (max-width: 900px) {
+
+    .topic h1, .right-topic h1, .shape h1 {
+      font-size: 1.25rem;
+    }
+
+    .contents p, .right-text p {
+      font-size: 1rem;
+    }
+    .fa-user {
+      font-size: 3.125rem;
+    }
+
+    .social-media {
+      flex-wrap: wrap;
+    }
+
+    .social-media li a i {
+      font-size: 1.875rem;
+    }
+
+    .navbar ul {
+      flex-wrap: wrap;
+    }
+    .flex-container{
+        flex-direction: column;
+        width: 60%;
+    }
+    .navbar li{
+        font-size: 1rem;
+    }
+  }
+  
