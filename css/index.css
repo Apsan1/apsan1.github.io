@@ -17,6 +17,10 @@
     height: 10vh;
     
 }
+.container{
+    width: 100vw;
+    height: 100vh;
+}
 .flex-container{
     display: flex;
     width: 90vw;

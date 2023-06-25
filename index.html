@@ -11,13 +11,16 @@
     <script>
         function switchdark() {
         var dark = document.body;
+        var container = document.querySelector(".container");
+        container.classList.toggle("dark-mode");
         dark.classList.toggle("dark-mode");
 }
     </script>
 </head>
 <body>
+    <div class="container">
         <nav class="navbar">
-            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-moon" onclick="switchdark()"></i>
             <ul>
                 <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
                 <li><a href="aboutme.html"><i class="fa-solid fa-person"></i></a></li>
@@ -76,6 +79,7 @@
             </div>
         </div>
         </div>
+    </div>
         <script src="https://kit.fontawesome.com/23cbe2ba13.js" crossorigin="anonymous"></script>
 </body>
 
