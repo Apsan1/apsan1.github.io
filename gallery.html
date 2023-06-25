@@ -12,14 +12,17 @@
     <script>
         function switchdark() {
         var dark = document.body;
+        var container = document.querySelector(".container1");
+        container.classList.toggle("dark-mode");
         dark.classList.toggle("dark-mode");
 }
     </script>
 </head>
 
 <body>
+    <div class="container1">
     <nav class="navbar">
-        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-moon" onclick="switchdark()"></i>
         <ul>
             <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
             <li><a href="aboutme.html"><i class="fa-solid fa-person"></i></a></li>
@@ -31,7 +34,7 @@
     </nav>
     <br><br><br><br><br>
     <hr align="right" width="50%" style="height:5px;border-width:
-     0;background-color:#97BBD8;margin-right: 10px;">
+     0;background-color:#97BBD8;margin-right: 50px;">
     <div class="line">
         <h1>This is an image gallery</h1>
         <h2>All the photos were clicked by me.</h2>
@@ -55,6 +58,7 @@
                 <source src="videos/vid1.mp4" type="video/mp4">
             </video></a>
     </div>
+</div>
     <script src="image.js"></script>
     <script src="https://kit.fontawesome.com/23cbe2ba13.js" crossorigin="anonymous"></script>
 </body>
