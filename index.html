@@ -8,19 +8,133 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/darkmode.css">
+    <style>
+        #home{
+            height: 100vh;
+        }
+        .about-me {
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .about-me h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        
+        .about-me p {
+            font-size: 1rem;
+            margin-top: 30px;
+        }
+
+        .about-me a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .personal-info{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .personal-info h3 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .personal-info p {
+            font-size: 1rem;
+        }
+
+        .personal-info b{
+            font-size: 1.2rem;
+        }
+
+        .personal-info ul {
+            font-size: 0.8rem;
+        }
+
+        .professions {
+            left: 0;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .education {
+            left: 0;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .skills {
+            right: 0;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .projects {
+            right: 0;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .sub-info {
+            padding: 5%;
+            width: 50%; 
+            height: 50%; 
+            box-sizing: border-box;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .hover-box{
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            transition: transform 1s;
+            padding: 5%;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .hover-box li{
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .front{
+            backface-visibility: hidden;
+            transition: transform 0.5s;
+        }
+
+        .back{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backface-visibility: hidden;
+            transition: transform 0.5s;
+            transform: rotateY(180deg);
+        }
+
+    </style>
     <script>
         function switchdark() {
         var dark = document.body;
-        var container = document.querySelector(".container");
-        container.classList.toggle("dark-mode");
         dark.classList.toggle("dark-mode");
 }
     </script>
 </head>
 <body>
-    <div class="container">
         <nav class="navbar">
-            <i class="fa-solid fa-moon" onclick="switchdark()"></i>
+            <i class="fa-solid fa-moon"></i>
             <ul>
                 <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
                 <li><a href="aboutme.html"><i class="fa-solid fa-person"></i></a></li>
@@ -30,6 +144,7 @@
                 <li><a href="references.html"><i class="fa-solid fa-book-bookmark"></i></a></li>
             </ul>
         </nav>
+        <section id="home">
         <div class="col-1">
             <div class="social-media">
                 <li><a href="https://www.facebook.com/apsan.fb/"><i class="fa-brands fa-facebook"></a></i></li>
@@ -51,11 +166,13 @@
                 <h1>Who am I?</h1>
             </div>
             <div class="contents">
-                <p>Hi, I am Apsan Rana Magar.<br><br>
-                    <w>I am intermediate in programming, with basic knowledge of languages like
-                        Java, Python, C++, HTML, CSS and currently studying DART.
-                    </w>
-                </p>
+                <p>Hi, I am Apsan Rana Magar.<br><br></p>
+                    <span>
+                        Exceling in the field of Computer Science and Information Technology, I am a student of Herald
+                        College Kathmandu. I am a passionate programmer and a software developer. I am a quick learner and
+                        a team player. I am always eager to learn new things and to come up with new ideas.
+                    </span>
+                
             </div>
         </div>
         <div class="col-3">
@@ -70,17 +187,161 @@
                 <h1>Interests and Hobbies</h1>
             </div>
             <div class="right-text">
-                <p>I am passsionately interested Programming and software development with programming languages like
-                    Java, Python and JavaScript. I have inspiration and creativeness to come out with new product which
-                    solves real-life problems. As my hobby, I like singing and playing guitar and developing, testing
-                    and playing games mostly First Person shooter games like CS:GO, Valorant, Splitgate, etc.</p>
-                <p>Besides the electronic devices interests I am more into ancient histroy as well as Theology and
-                    Archaeology.</p>
+                <p>Enthusiastic about coding and keeping up with new tech. Good at making websites user-friendly. Active in meetups to learn and share. Love helping the community through volunteering.</p>
+                <p>Experienced teacher also educating students with information about new and fascinating technologies. Also, enjoy playing guitar and making music with FL Studio.</p>
             </div>
         </div>
         </div>
-    </div>
         <script src="https://kit.fontawesome.com/23cbe2ba13.js" crossorigin="anonymous"></script>
+    </section>
+    <section class="content">
+        <div class="about-me">
+            <h1>About Me</h1>
+        </div>
+    </section>
+    
+    <section class="personal-info">
+        <div class="sub-info">
+        <div class="professions">
+            <h3>Professional Experience</h3> <br>
+            <div class="hover-box">
+                <div class="back">None</div>
+                <div class="front">
+            <p>
+                <b>Graphic Designer / Software Developer / Social Media Handler</b><br>
+                Shree JwalaDevi Multipurpose Cooperative Ltd., Nepal<br>
+                <ul>
+                    <li>Created concept logos and developed accounting tools.</li>
+                    <li>Managed social media platforms.</li>
+                </ul><br>
+            </p>
+        </div>
+            </div>
+            <div class="hover-box">
+                <div class="back">None</div>
+                <div class="front">
+                <p>
+                <b>Senior Designer & Innovation Consultant</b><br>
+                K. Anil Trading Company, Cambodia<br>
+                <ul>
+                    <li>Official Web-Developer, <br> and Infrastructure Visualizer for largest workshop.</li>
+                </ul><br>
+            </p>
+            </div>
+            
+            </div>
+
+            <div class="hover-box">
+                <div class="back">None</div>
+                <div class="front">
+                <p>
+                <b>Secondary Level Education Instructor</b><br>
+                Study School, Banasthali, Thankot, Kathmandu, Nepal<br>
+                Teaching students about: <br>
+                <ul>
+                    
+                    <li>Modern Science, <br> Technology, <br> and Computational Skills.</li>
+                </ul>
+                </p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub-info">
+            <div class="projects">
+            <h3>Projects</h3> <br>
+            <div class="hover-box">
+                <div class="back"><a href="https://www.kaniltrading.com.kh">Visit Website</a><br></div>
+                <div class="front">
+            <p>
+                <b>Kunwar Group Web Development (Recent)</b><br>
+                Designed and developed website for Kanil Trading Company, Cambodia.<br>
+                </p>
+                </div>
+            </div>
+            <div class="hover-box">
+                <div class="back">
+                    <a href="https://www.kaggle.com/code/apsan1/regression/notebook">View on Kaggle</a><br>
+                </div>
+                <div class="front">
+            <p>
+                <b>Machine Learning Problems</b><br>
+                Boosted classification and regression accuracy.<br>
+            </p>
+            </div>
+            </div>
+            
+            <div class="hover-box">
+                <div class="back">
+                    <a href="http://athena.42web.io">Visit Website</a><br>
+                </div>
+                <div class="front">
+                    <p>
+                <b>Voice Assistant</b><br>
+                    Developed Athena voice assistant with AI.<br>
+                </p>
+                </div>
+            </div>
+
+            <div class="hover-box">
+                <div class="back">
+                    <a href="https://github.com/Apsan1/Anti_Theft_Alert_System">GitHub Link</a>
+                </div>
+                <div class="front">
+                <b>Anti-theft Detection System</b><br>
+                    System to detect stolen items and alert users.<br>
+                </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sub-info">
+            <div class="education">
+                <h3>Education</h3> <br>
+                <p>
+                    <b>Primary to Secondary Education:</b><br>
+                    RIBS School, Kathmandu, Nepal<br>
+                    <b>High School:</b><br>
+                    Trinity International SS & College, Kathmandu, Nepal<br>
+                    <b>Bachelor's Degree:</b><br>
+                    Herald College Kathmandu, Kathmandu, Nepal (Present)
+                </p>
+            </div>
+        </div>
+
+        <div class="sub-info">
+            <div class="skills">
+            <h3>Skills</h3> <br>
+            <p>
+                <b>Programming:</b><br>
+                JavaScript, Python, Machine Learning, React, Java, C++<br>
+                <b>Personal:</b><br>
+                Innovation, Interpersonal Skills, Creativity, Adaptability, Collaboration
+            </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        //when hovered in project's hover-box th box will flip to back side and show the details of the project
+        var hoverBox = document.querySelectorAll('.hover-box');
+        hoverBox.forEach(box => {
+            box.addEventListener('mouseover', () => {
+                box.style.transform = 'rotateY(180deg)';
+            });
+            box.addEventListener('mouseout', () => {
+                box.style.transform = 'rotateY(0deg)';
+            });
+        });
+
+
+
+
+
+
+    </script>
+    <script src="https://kit.fontawesome.com/23cbe2ba13.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
