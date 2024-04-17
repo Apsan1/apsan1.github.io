@@ -20,7 +20,7 @@ const Details = () => {
 
         <div className="grid grid-cols-2 px-20 row-span-1 h-screen">
                 <div className="flex flex-col col-span-1 ">
-                <img className="w-auto h-auto border rounded-full" src="public/imgs/me.jpg" alt="My Profile Picture"/>
+                <img className="w-auto h-auto border rounded-full" src="/imgs/me.jpg" alt="My Profile Picture"/>
                 <h1 className="text-4xl font-normal text-center m-4">Apsan Rana Magar</h1>
                 </div>
 
