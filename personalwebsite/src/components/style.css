@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.intro-container {
+    overflow: hidden; /* Hide the bottom part of the text */
+    height: 50px; /* Adjust height to hide the bottom part */
+}
+
+.intro-name, .intro-subject {
+    animation: moveUp .5s ease-in; /* Apply the moveUp animation */
+}
