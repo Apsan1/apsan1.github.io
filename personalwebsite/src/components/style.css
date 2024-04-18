@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@keyframes moveUp {
+@keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(100%);
@@ -19,4 +19,21 @@
 
 .intro-name, .intro-subject {
     animation: moveUp .5s ease-in; /* Apply the moveUp animation */
+}
+
+button {
+    transition: all 2s ease-in-out;
+}
+@keyframes Colors {
+    0% {
+        background-color: rgb(224, 224, 224);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.scrollbtn {
+    animation: Colors 2s infinite;
 }

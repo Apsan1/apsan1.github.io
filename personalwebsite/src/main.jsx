@@ -9,12 +9,13 @@ import Projects from './components/projects.jsx'
 import ExperienceData from './components/experience.jsx'
 import { Quote1, Quote2 } from './components/quote.jsx'
 import AboutMe from './components/aboutme.jsx'
+import Details from './components/details.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar />
+
     <Home />
-    <App />
+    <Details />
     <AboutMe />
     <Quote1 />
     <ExperienceData />
