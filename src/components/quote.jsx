@@ -4,8 +4,8 @@ import { RevealLeft } from './utils/animations';
 
 export const Quote1 = () => {
     return (
-        <div className=" h-screen flex flex-col justify-center items-center">
-        <div className="text-4xl font-normal text-center" style={{ width: "50%" }}>
+        <div className="14promax:mt-0 lg:mt-0 h-screen flex flex-col justify-center items-center">
+        <div className="14promax:text-2xl lg:text-4xl font-normal text-center lg:w-50vw 14promax:w-70vw">
           <RevealLeft> 
              <p className="text-left">
                 Elevating businesses with minimalist sophistication, I specialize in crafting
@@ -27,8 +27,8 @@ export const Quote2 = () => {
 
     return (
         <>
-       <RevealLeft> <div className="h-screen flex flex-col justify-center items-center">
-            <div className="text-4xl font-normal text-center" style={{ width: "50%" }}>
+       <RevealLeft> <div className="lg:h-screen lg:mt-0  14promax:mt-40 flex flex-col justify-center items-center">
+            <div className="lg:text-4xl 14promax:text-2xl font-normal text-center lg:w-50vw 14promax:w-70vw">
                 <p className="text-left">
                     Ready to elevate your brand into the calming realm of minimalist design and increase your global reach?
                     <br /><br />

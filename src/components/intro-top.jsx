@@ -4,9 +4,9 @@ import {Reveal} from "./utils/animations";
 export const IntroTop = () => {
     return (
         <>
-            <div className="ml-10">
-             <Reveal>  <h1 className="intro-name text-8xl font-bold mb-4">Hi, I am Apsan</h1></Reveal> 
-             <Reveal>  <h2 className="intro-subject text-7xl font-bold">Web Developer</h2> </Reveal>
+            <div className=" lg:mt-20 lg:ml-10 14promax:ml-3">
+             <Reveal>  <h1 className="14promax:text-7xl intro-name lg:text-8xl font-bold mb-4">Hi, I am Apsan</h1></Reveal> 
+             <Reveal>  <h2 className="14promax:text-5xl intro-subject lg:text-7xl font-bold">Web Developer</h2> </Reveal>
             </div>
         </>
     );
@@ -17,8 +17,8 @@ export const IntroTop = () => {
 export const OutroBottom = () => {
     return (
         <>
-        <h1 className="text-8xl font-bold mb-4">Apsan</h1>
-        <h2 className="text-7xl font-bold">Web Developer</h2>
+        <h1 className="lg:text-8xl 14promax:text-6xl font-bold mb-4">Apsan</h1>
+        <h2 className="lg:text-7xl 14promax:text-5xl font-bold">Web Developer</h2>
         </>
     );
 }

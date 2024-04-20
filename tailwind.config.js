@@ -6,6 +6,23 @@ export default {
   ],
   theme: {
     extend: {
+      width: {
+        "40": "10rem",
+        "40vw": "40vw",
+        "50": "12.5rem",
+        "50vw": "50vw",
+        "70": "17.5rem",
+        "80": "20rem",
+        "60": "15rem",
+        "60vw": "60vw",
+        "70vw": "70vw",
+        "80vw": "80vw",
+        "85vw": "85vw"
+      },
+      screens: {
+        "2xl": "1536px",
+        "14promax": "430px",
+      },
       keyframes: {
         typing: {
           "0%": {
