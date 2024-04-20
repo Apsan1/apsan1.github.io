@@ -21,7 +21,7 @@ export default {
       },
       screens: {
         "2xl": "1536px",
-        "14promax": "430px",
+        "14promax": "200px",
       },
       keyframes: {
         typing: {
