@@ -39,6 +39,7 @@ export const Quote2 = () => {
             className="w-40 bg-black hover:bg-white hover:text-black text-white font-normal py-2 px-4 rounded mt-4 border-2 border-black transition-colors duration-300"
             onMouseEnter={() => setText("Connect with me")} 
             onMouseLeave={() => setText("Ready?")}
+            onClick={() => window.open("https://www.linkedin.com/in/Apsan", "_blank")}
         >
             {text}
         </button>
