@@ -12,7 +12,8 @@ const Home = () => {
                 </RevealLeft>
             </div>
             <div className="flex-shrink-0 mb-8">
-                <button onClick={scrollDown} className="14promax:mb-20 lg:mb-0 scrollbtn w-12 lg:w-20 h-12 lg:h-20 rounded-full">
+                <button onClick={() => 
+                    scrollDown('hero')} className="14promax:mb-20 lg:mb-0 scrollbtn w-12 lg:w-20 h-12 lg:h-20 rounded-full">
                     <i className="fas fa-chevron-down text-2xl lg:text-4xl"></i>
                 </button>
             </div>
