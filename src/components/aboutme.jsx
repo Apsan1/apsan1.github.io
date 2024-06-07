@@ -4,7 +4,7 @@ import { Reveal } from "./utils/animations";
 const AboutMe = () => {
     return (
         
-        <div className="14promax:mt-60 lg:mt-0 grid lg:grid-cols-2 lg:px-20 lg:row-span-1 lg:h-screen">
+        <div className="14promax:mt-72 lg:mt-0 grid lg:grid-cols-2 lg:px-20 lg:row-span-1 lg:h-screen" id="about">
                 <div className="flex flex-col col-span-1 14promax:items-center">
                 <Reveal>
                 <img className="lg:w-auto lg:h-auto 14promax:h-80 border rounded-full" src="/imgs/me.jpg" alt="My Profile Picture"/>
