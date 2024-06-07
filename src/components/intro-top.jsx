@@ -4,9 +4,9 @@ import {Reveal} from "./utils/animations";
 export const IntroTop = () => {
     return (
         <>
-            <div className=" lg:mt-20 lg:ml-10 14promax:ml-3">
+            <div className=" lg:mt-20 lg:ml-10 14promax:ml-3 h-70">
              <Reveal>  <h1 className="14promax:text-7xl intro-name lg:text-8xl font-bold mb-4">Hi, I am Apsan</h1></Reveal> 
-             <Reveal>  <h2 className="14promax:text-5xl intro-subject lg:text-7xl font-bold">Web Developer</h2> </Reveal>
+             <Reveal>  <h2 className="14promax:text-5xl intro-subject lg:text-7xl font-bold h-20">Web Developer</h2> </Reveal>
             </div>
         </>
     );
