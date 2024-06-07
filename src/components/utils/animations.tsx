@@ -150,6 +150,9 @@ export const fadeDown = ({children, width = "fit-content"}: Props) => {
     );
 }
 
-export const scrollDown = () => {
-    window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+export function scrollDown (destination) {
+    const element = document.getElementById(destination);
+    if (element) {
+        element.scrollIntoView({behavior: "smooth"});
+    }
 };
