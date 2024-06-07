@@ -5,7 +5,7 @@ import { Reveal, scrollDown } from "./utils/animations";
 const Details = () => {
     return (
         <>
-        <div className="lg:h-screen">
+        <div className="lg:h-screen h-screen py-20" id="hero">
         <IntroTop />
         <div className="grid grid-rows-1 gap-1">
         <div className="flex flex-col col-span-1 lg:pl-9 14promax:pl-3 ">
@@ -20,7 +20,7 @@ const Details = () => {
             <button className="w-40 bg-black hover:bg-white hover:text-black text-white font-normal py-2 px-4 rounded mt-4 border-2 border-black">
                 <a href="https://www.linkedin.com/in/apsan/" className="no-underline">Connect with me</a>
             </button>
-            <button className="text-3xl text-blue-900 text-left font-light underline" onClick={scrollDown}>About Me</button>
+            <button className="text-3xl text-blue-900 text-left font-light underline" onClick={ () => scrollDown('about')}>About Me</button>
         </div>
 
         </div>
