@@ -17,6 +17,7 @@
     "glob": "^10.4.1",
     "gsap": "^3.12.5",
     "inflight": "^1.0.6",
+    "personalwebsite": "file:",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.7",
